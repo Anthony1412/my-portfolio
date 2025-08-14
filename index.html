@@ -9,7 +9,7 @@
   development, developer, frontend">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="google-site-verification" content="IZ7Sm227j_9N0Sy_JmwOvn1_OAm_O2rHr2833ZV0Fro">
-  <title>Anthony Carvaluo</title>
+  <title>Anthony Carvalho</title>
   <link rel="stylesheet" href="./ant.css" />
   <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700,300|Quattrocento" rel="stylesheet">
@@ -66,7 +66,7 @@
     <div class="home-content" id="home-page">
       <div class="name">
         <h1>Hi, I'm Anthony</h1>
-        <p>A Web Developer in training.</p>
+        <p>An Enthusiastic Full Stack Developer & DevOps Engineer</p>
       </div>
       <div class="angle-down-icon">
         <a href="#about"><i class="fas fa-angle-down"></i></a>
@@ -78,11 +78,11 @@
       <div class="about-content">
         <div class="left-content">
           <div>
-           <h1 class="about-heading">About Me</h1>
+           <h1 class="about-heading">About-me</h1>
           </div> 
           <img src="https://i.postimg.cc/Hx4nChpH/fbavatar-1630400663387-6838396024049256103.png" alt="image" />
           <p>
-            Hello ,I am Anthony Carvalho a 23 year old MCA graduate from KLE Tech university Belgaum
+            Hello ,I am <strong>Anthony Carvalho</strong> a 24 year old MCA graduate from KLE Tech university Belgaum
             (MCA dept)
              I really enjoy solving problems as well as making things pretty and easy to use. 
              I can't stop learning new things; the more, the better.
@@ -118,6 +118,11 @@
                     <div class="info">
                       <span>BOOTSTRAP</span>
                     </div>
+                    <div class="progress-line"><span class="Java"></span></div>
+                    <div class="bar">
+                    <div class="info">
+                      <span>JAVA</span>
+                    </div>
                     <div class="progress-line"><span class="bootstrap"></span></div>
                     <div class="bar">
                       <div class="info">
@@ -146,148 +151,353 @@
     </div>
  </section>
   <section id="my-works">
-    <div class="portfolio">
-      <div class="proj-heading">
-        <h1>Portfolio</h1>
+  <div class="portfolio">
+    <div class="proj-heading">
+      <h1>My-Works</h1>
+    </div>
+
+    <style>
+      /* Portfolio Section Styling */
+      #my-works {
+        padding: 50px 20px;
+        background: #0f172a;
+        font-family: "Segoe UI", sans-serif;
+      }
+
+      .proj-heading h1 {
+        text-align: center;
+        color: #fff;
+        font-size: 36px;
+        margin-bottom: 40px;
+        position: relative;
+      }
+
+      .proj-heading h1::after {
+        content: "";
+        display: block;
+        width: 80px;
+        height: 4px;
+        background: linear-gradient(135deg, #ff6b6b, #f06595);
+        margin: 10px auto 0;
+        border-radius: 2px;
+      }
+
+      /* Project Cards Grid */
+      .projects-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+        max-width: 1200px;
+        margin: auto;
+      }
+
+      /* Card Design */
+      .project-card {
+        background: rgba(255, 255, 255, 0.06);
+        backdrop-filter: blur(8px);
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+        transition: transform 0.35s ease, box-shadow 0.35s ease;
+      }
+
+      .project-card:hover {
+        transform: translateY(-8px) scale(1.02);
+        box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+      }
+
+      /* Image Hover Zoom Effect */
+      .project-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        transition: transform 0.4s ease;
+      }
+
+      .project-card:hover img {
+        transform: scale(1.08);
+      }
+
+      /* Details Section */
+      .project-details {
+        padding: 18px;
+        color: #fff;
+      }
+
+      .project-details i {
+        font-size: 20px;
+        margin-right: 8px;
+        color: #f39c12;
+      }
+
+      .project-details h2 {
+        font-size: 18px;
+        margin: 10px 0;
+        color: #f5f5f5;
+      }
+
+      .project-details p {
+        font-size: 14px;
+        margin-bottom: 15px;
+        color: #d1d5db;
+      }
+
+      /* Button Styling */
+      .project-details a {
+        display: inline-block;
+        background: linear-gradient(135deg, #ff6b6b, #f06595);
+        color: white;
+        padding: 10px 14px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-size: 14px;
+        transition: background 0.3s ease, transform 0.3s ease;
+      }
+
+      .project-details a:hover {
+        background: linear-gradient(135deg, #f06595, #ff6b6b);
+        transform: scale(1.05);
+      }
+    </style>
+
+    <div class="projects-container">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <img src="Stock_analyser.jpg" alt="Stock Analyser">
+        <div class="project-details">
+          <i class="fab fa-html5"></i>
+          <i class="fab fa-css3-alt"></i>
+          <h2>Stock Analyser</h2>
+          <p>Built using HTML, CSS, Python, ML (Linear Regression), Flask</p>
+          <a href="https://github.com/Anthony1412/Stock_analyser-NSE-.git" target="_blank">
+            View Source <i class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
       </div>
-      <div class="portfolio-content container">
-        <div class="proj-1">
-          <img src="bill.jpg">
-          <div class="proj1-details">
-            <i class="fab fa-html5"></i>
-            <i class="fab fa-css3-alt"></i>
-            <i class="fab fa-js"></i>
-            <h2>Billing software</h2>
-            <p>Build Using HTML,CSS,JS,Python</p>
-            <button><a href="https://github.com/Anthony1412/billing-software" target="blank">View source <i
-              class="fas fa-external-link-alt"></i></a>
-            </button>
-            
-          </button>
-          </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <img src="inventory.jpg.webp" alt="Inventory Management System">
+        <div class="project-details">
+          <i class="fab fa-html5"></i>
+          <i class="fab fa-css3-alt"></i>
+          <h2>Inventory Management System</h2>
+          <p>Built using HTML, CSS, Python</p>
+          <a href="https://github.com/Anthony1412/Inventory-management-system" target="_blank">
+            View Source <i class="fas fa-external-link-alt"></i>
+          </a>
         </div>
-        
-        
-        <div class="proj-2">
-          <img src="payroll_management.jpg">
-          <div class="proj2-details">
-            <i class="fab fa-html5"></i>
-            <i class="fab fa-css3-alt"></i>
-            <h2>inventory Management system</h2>
-            <p>Build Using HTML,CSS,Python</p>
-            <button><a href="https://github.com/Anthony1412/Inventory-management-system" target="blank">View source <i
-              class="fas fa-external-link-alt"></i></a>
-            </button>
-          
-          </button>
-          </div>
-          
-          
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card">
+        <img src="edins.jpg" alt="EDINS Education Info System">
+        <div class="project-details">
+          <i class="fab fa-html5"></i>
+          <i class="fab fa-css3-alt"></i>
+          <i class="fab fa-node-js"></i>
+          <i class="fas fa-database"></i>
+          <h2>EDINS Education Info System</h2>
+          <p>Built using HTML, CSS, Python, Node.js, MongoDB</p>
+          <a href="https://github.com/Anthony1412/Inventory-management-system" target="_blank">
+            View Source <i class="fas fa-external-link-alt"></i>
+          </a>
         </div>
-        <div class="proj-3">
-          <img src="payroll_management.jpg">
-          <div class="proj2-details">
-            <i class="fab fa-html5"></i>
-            <i class="fab fa-css3-alt"></i>
-            <h2>EDINS Education info system</h2>
-            <p>Build Using HTML,CSS,Python,nodejs,mongodb</p>
-            <button><a href="https://github.com/Anthony1412/Inventory-management-system" target="blank">View source <i
-              class="fas fa-external-link-alt"></i></a>
-            </button>
-          
-          </button>
-          </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="project-card">
+        <img src="greenleaf.jpg.webp" alt="Green Leaf E-commerce">
+        <div class="project-details">
+          <i class="fab fa-html5"></i>
+          <i class="fab fa-css3-alt"></i>
+          <i class="fab fa-node-js"></i>
+          <i class="fas fa-database"></i>
+          <h2>Green Leaf (Hosted E-commerce Website)</h2>
+          <p>Built using HTML, CSS, Python, Node.js, MongoDB</p>
+          <a href="https://thegreenleaf.great-site.net" target="_blank">
+            View Project <i class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="project-card">
+        <img src="bill.jpg" alt="Billing Software">
+        <div class="project-details">
+          <i class="fab fa-html5"></i>
+          <i class="fab fa-css3-alt"></i>
+          <i class="fab fa-node-js"></i>
+          <i class="fas fa-database"></i>
+          <h2>Billing Software</h2>
+          <p>Built using HTML, CSS, Python, Node.js, MongoDB</p>
+          <a href="https://github.com/Anthony1412/billing-software" target="_blank">
+            View Source <i class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
           
           
         </div>
         <div class="more-work">
           <p>
-            More
+          
           </p>
    
         </div>
       </div>
     </div>
   </section>
-  <section>
-    <div class="Education-content" id="Education">
-    <div class="name">
-      <h1>my Education</h1>
-      <p> Masters in Computer application. <br> KLE technological university's Dr.MS.Sheshgiri college of Cngineering. <br> Belgaum.
-      </p>
-      <p> Bachelors in Computer application. <br> Govindram sekseria Science Colllege. <br> Belgaum.
-      </p>
-      <p>
-        pre-university.<br> Rabindranath Tagore pu college<br> Belgaum.
-      </p>
-      <p>
-        schooling.<br> St.Pauls High School.<br> Belgaum.
-      </p>
-      
+<section id="Education" class="education-section">
+  <div class="education-container">
+    <h1 class="section-title">My Education</h1>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-icon"><i class="fas fa-graduation-cap"></i></div>
+        <div class="timeline-content">
+          <h2>Masters in Computer Application</h2>
+          <h3>KLE Technological University (Dr. MS Sheshgiri College of Engineering)</h3>
+          <span class="location">Belgaum</span>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-icon"><i class="fas fa-laptop-code"></i></div>
+        <div class="timeline-content">
+          <h2>Bachelors in Computer Application</h2>
+          <h3>Govindram Sekseria Science College</h3>
+          <span class="location">Belgaum</span>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-icon"><i class="fas fa-book-reader"></i></div>
+        <div class="timeline-content">
+          <h2>Pre-University</h2>
+          <h3>Rabindranath Tagore PU College</h3>
+          <span class="location">Belgaum</span>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-icon"><i class="fas fa-school"></i></div>
+        <div class="timeline-content">
+          <h2>Schooling</h2>
+          <h3>St. Paul’s High School</h3>
+          <span class="location">Belgaum</span>
+        </div>
+      </div>
     </div>
+  </div>
 </section>
+
 <section>
-    <div class="Certification-content" id="cert">
+  <div class="Certification-content" id="cert">
     <div class="name">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+      <h1 style="text-align:center; font-size:2rem; color:#333;">My Certifications</h1>
+      <p style="text-align:center; color:#666; margin-bottom:20px;">
+        The following are my certifications.
+      </p>
+
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="salesforce.jpg" alt="Salesforce" />
+          <div class="caption">Salesforce Virtual Internship as a Salesforce Developer</div>
+        </div>
+
+        <div class="mySlides fade">
+          <img src="phn technology.jpg" alt="PHN Technology" />
+          <div class="caption">Frontend Developer Trainee - PHN Technology</div>
+        </div>
+
+        <div class="mySlides fade">
+          <img src="code of hour.jpg" alt="Data Analytics" />
+          <div class="caption">Virtual Internship on Data Analytics</div>
+        </div>
+
+        <div class="mySlides fade">
+          <img src="Accenture.jpg" alt="Agile" />
+          <div class="caption">Virtual Internship on Agile Methodology</div>
+        </div>
+
+        <div class="mySlides fade">
+          <img src="cognizant.jpg" alt="Hour of Code" />
+          <div class="caption">Hour of Code: Introduction to Computer Programming</div>
+        </div>
+
+      </div>
+
+      <div style="text-align:center; margin-top:15px;">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
 <style>
-* {box-sizing: border-box;}
-body {font-family: Verdana, sans-serif;}
-.mySlides {display: none;}
-img {vertical-align: middle;}
-    
-    /* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-    .prev, .next, .text {font-size: 11px}
+.slideshow-container {
+  max-width: 700px;
+  position: relative;
+  margin: auto;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.mySlides img {
+  width: 100%;
+  border-radius: 15px;
+  display: block;
+}
+
+.caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  backdrop-filter: blur(4px);
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 4px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.active, .dot:hover {
+  background-color: #333;
+  transform: scale(1.2);
+}
+
+.fade {
+  animation: fadeEffect 1s ease-in-out;
+}
+
+@keyframes fadeEffect {
+  from { opacity: 0.4; }
+  to { opacity: 1; }
 }
 </style>
-</head>
-
-<h1>my certifications</h1>
-<p>The following are my certifications.<br></p>
-
-<div class="slideshow-container">
-
-<div class="mySlides fade">
-  <div class="numbertext">1 / 5</div>
-  <img src="salesforce.jpg" style="width:100%">
-  <div class="text">salesforce virtual internship on salesforce technology<br>as asalesforce developer</div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">2 / 5</div>
-  <img src="phn technology.jpg" style="width:100%">
-  <div class="text"> Frontend developer trainee for Phn technology</div>
-</div>
-
-<div class="mySlides fade">
-    <div class="numbertext">3 / 5</div>
-    <img src="code of hour.jpg" style="width:100%">
-    <div class="text">virtual internship on data Analytics</div>
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">4 / 5</div>
-    <img src="Accenture.jpg" style="width:100%">
-    <div class="text">virtual internship on Agile methodology.</div>
-  </div>
-
-<div class="mySlides fade">
-  <div class="numbertext">5/ 5</div>
-  <img src="cognizant.jpg" style="width:100%">
-  <div class="text">hour of code introduction to computer programming.</div>
-</div>
-
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-  <span class="dot" onclick="currentSlide(4)"></span> 
-  <span class="dot" onclick="currentSlide(5)"></span> 
-</div>
 
 <script>
 let slideIndex = 0;
@@ -297,103 +507,149 @@ function showSlides() {
   let i;
   let slides = document.getElementsByClassName("mySlides");
   let dots = document.getElementsByClassName("dot");
+  
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+    slides[i].style.display = "none";
   }
+  
   slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
+  if (slideIndex > slides.length) { slideIndex = 1 }
+  
   for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+    dots[i].classList.remove("active");
   }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 4500); // Change image every 2 seconds
+  
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].classList.add("active");
+  
+  setTimeout(showSlides, 5000);
+}
+
+function currentSlide(n) {
+  slideIndex = n - 1;
+  showSlides();
 }
 </script>
 
+  <section id="soft-skills" class="soft-skills-content">
+  <div class="container">
+    <h1 class="section-title">My Soft Skills</h1>
+    <ul class="soft-skills-list">
+      <li><i class="fas fa-comments"></i> Communication</li>
+      <li><i class="fas fa-users"></i> Leadership</li>
+      <li><i class="fas fa-eye"></i> Observation</li>
+      <li><i class="fas fa-tasks"></i> Multitasking</li>
+      <li><i class="fas fa-bolt"></i> Quick Grasping</li>
+      <li><i class="fas fa-lightbulb"></i> Problem Solving</li>
+      <li><i class="fas fa-clock"></i> Time Management</li>
+    </ul>
+  </div>
 </section>
-    <section>
-        <div class="soft-skills-content" id="soft-skills">
-            <div class="name"><animate>
-              <h1>my soft-skills</h1>
-              <p> * Communication.<br>
-                  * Leadership.<br>
-                  * Observation.<br>
-                  * Multitasking.<br>
-                  * Quick grasping.<br>
-                  *problem solving.<br>
-                  *Time Management<br>
-              </p>
-              </animate>
-            </div>
-        </section>
 
-
-  <div class="contact" id="contact-me">
-    <div class="container">
-      <div class="contact-content">
-        <h2>Contact Me</h2>
-        <p class="mail">
-          Get in touch with me <i class="fas fa-arrow-right"></i>-> carvalhoanthony14@gmail.com
-        </p>
-        <p class="links">Or find me on:</p>
-        <a href="https://www.linkedin.com/in/anthony-carvalho-682255228?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="blank"><i class="fab fa-linkedin">
-            Linkedin</i></a>
-        
-        <a href="https://github.com/Anthony1412/" target="blank"><i class="fab fa-github"></i> Github</a>
-       
-        <a href="https://twitter.com/code_sanket" target="blank"><i class="fab fa-twitter"> Twitter</i></a>
-        <a href="https://www.instagram.com/__.tony_14/" target="blank"><i class="fab fa-instagram"></i> Instagram</a>
-        <a href="https://mail.google.com/" target="blank"><i class="fab fa-instagram"></i> Gmail</a>
+<div id="contact-me" class="contact">
+  <div class="container">
+    <div class="contact-content">
+      <h2 class="section-title">Contact Me</h2>
+      <p class="mail">
+        <i class="fas fa-envelope"></i> Get in touch: 
+        <a href="mailto:carvalhoanthony14@gmail.com">carvalhoanthony14@gmail.com</a>
+      </p>
+      <p class="links">Or find me on:</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/anthony-carvalho-682255228" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Anthony1412" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://twitter.com/code_sanket" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/__.tony_14/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:carvalhoanthony14@gmail.com"><i class="fas fa-envelope"></i></a>
       </div>
     </div>
   </div>
-  <script type="text/javascript">
-    $(document).ready(function () {
-      $(window).scroll(function () {
-        // checks if window is scrolled more than 500px, adds/removes solid class
-        if ($(this).scrollTop() > 550) {
-          $('.navbar').addClass('solid');
-          $('.back-to-top').addClass('visible');
-        } else {
-          $('.navbar').removeClass('solid');
-          $('.back-to-top').removeClass('visible');
-        }
+</div>
 
-      });
+<style>
+  .section-title {
+    font-size: 2rem;
+    color: #0ea5a9;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+  }
+
+  /* Soft Skills Styling */
+  .soft-skills-list {
+    list-style: none;
+    padding: 0;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .soft-skills-list li {
+    font-size: 1.1rem;
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .soft-skills-list i {
+    color: #0ea5a9;
+    font-size: 1.3rem;
+  }
+
+  /* Contact Section Styling */
+  .contact {
+    padding: 40px 0;
+    background: #0f1724;
+    color: #fff;
+    text-align: center;
+  }
+  .contact .mail a {
+    color: #0ea5a9;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .social-links {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  .social-links a {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: transform 0.3s, color 0.3s;
+  }
+  .social-links a:hover {
+    color: #0ea5a9;
+    transform: scale(1.1);
+  }
+</style>
+
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 550) {
+        $('.navbar').addClass('solid');
+        $('.back-to-top').addClass('visible');
+      } else {
+        $('.navbar').removeClass('solid');
+        $('.back-to-top').removeClass('visible');
+      }
     });
-  </script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      // Add smooth scrolling to all links
-      $("a").on('click', function (event) {
 
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-          // Prevent default anchor click behavior
-          event.preventDefault();
-
-          // Store hash
-          var hash = this.hash;
-
-          // Using jQuery's animate() method to add smooth page scroll
-          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 800, function () {
-
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-          });
-        } // End if
-      });
+    $("a").on('click', function (event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+        var hash = this.hash;
+        $('html, body').animate({ scrollTop: $(hash).offset().top }, 800);
+      }
     });
-  </script>
-</body>
-
-</html>
-
-
-
-Resources
+  });
+</script>
+<footer style="background-color: #1a1a1a; color: #ffffff; padding: 2rem 0; text-align: center; font-family: Arial, sans-serif;">
+  <div>
+    <h4 style="margin: 0; font-size: 1.2rem; font-weight: 400;">
+      Designed & Developed by <strong style="color: #00aaff;">Anthony Carvalho</strong>
+    </h4>
+  </div>
+</footer>
