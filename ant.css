@@ -27,8 +27,8 @@
 /* Dark mode support */
 @media (prefers-color-scheme: light) {
   :root {
-    --bg: #f5f5f5;
-    --fg: #1a1a1a;
+    --bg: #080202;
+    --fg: #dfbbbb;
     --glass-bg: rgba(0, 0, 0, 0.1);
     --glass-border: rgba(0, 0, 0, 0.2);
   }
@@ -53,6 +53,42 @@ body {
   line-height: 1.7;
   overflow-x: hidden;
 }
+/* for animtioin for the name to be displayed as type writter */
+.typewriter {
+  overflow: hidden;              /* Ensures the text stays hidden until typed */
+  border-right: 3px solid #ebf0f1; /* Cursor effect */
+  white-space: nowrap;           /* Keeps text on one line */
+  margin: 0 auto;
+  letter-spacing: 2px;
+  animation: typing 2.5s steps(25, end), blink-caret 0.75s step-end infinite;
+  font-family: 'Courier New', monospace;
+  font-size: 2em;
+  color: #000000;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The blinking cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #010a0e; }
+}
+
+.home-content {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.subtitle {
+  font-size: 1.2em;
+  color: #ccc;
+  margin-top: 10px;
+}
+
 
 /* Container with fluid scaling */
 .container {
@@ -166,7 +202,7 @@ body {
 .home-content p {
   font-size: clamp(1rem, 2.5vw, 1.3rem);
   font-weight: 300;
-  color: #eee;
+  color: #050101;
   max-width: 600px;
   margin: 0 auto;
 }
@@ -267,7 +303,7 @@ section h2 {
   text-align: center;
   font-family: var(--font-main);
   font-size: clamp(2rem, 5vw, 2.8rem);
-  background: var(--gradient-accent);
+  background: rgb(231, 230, 230)
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 3rem;
@@ -303,7 +339,7 @@ section h2::after {
   -webkit-text-fill-color: transparent;
 }
 .about-text p {
-  color: #ccc;
+  color: #c4a7a7;
   font-size: clamp(1rem, 2vw, 1.2rem);
   line-height: 1.8;
 }
@@ -327,9 +363,6 @@ section h2::after {
   50% { transform: translateY(-20px); }
 }
 
-/* ==============================
-   SKILLS SECTION
-   ============================== */
 /* =========================
    Skills Section — Enhanced
    ========================= */
@@ -438,6 +471,20 @@ section h2::after {
 .skill.revealed .progress-line span {
   animation-play-state: running;
 }
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.skill {
+  flex: 0 0 48%; /* two columns (48% + small gap = full width) */
+  background: var(--glass-accent);
+  padding: 10px;
+  border-radius: 5px;
+}
+
 
 /* ---- Animations ---- */
 @keyframes growBar {
@@ -555,7 +602,7 @@ section h2::after {
   width: 50%;
   padding: 1.5rem 2.5rem;
   background: var(--glass-bg);
-  border: 1px solid var(--glass-border);
+  border: 1px solid var(--fg);
   border-radius: 12px;
   margin-bottom: 1.5rem;
   transition: var(--transition-fast);
@@ -712,7 +759,7 @@ section h2::after {
 }
 .soft-skills-list li {
   background: var(--glass-bg);
-  border: 1px solid var(--glass-border);
+  border: 1px solid var(--fg);
   border-radius: 15px;
   padding: 1.5rem;
   color: #ddd;
