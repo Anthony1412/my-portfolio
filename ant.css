@@ -60,7 +60,7 @@ body {
   white-space: nowrap;           /* Keeps text on one line */
   margin: 0 auto;
   letter-spacing: 2px;
-  animation: typing 2.5s steps(25, end), blink-caret 0.75s step-end infinite;
+  animation: typing 2.5s steps(12, end), blink-caret 0.75s step-end infinite;
   font-family: 'Courier New', monospace;
   font-size: 2em;
   color: #000000;
